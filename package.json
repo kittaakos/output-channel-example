@@ -1,0 +1,52 @@
+{
+  "name": "output-channel-example",
+  "version": "0.0.1-alpha.1",
+  "publisher": "kittaakos",
+  "description": "https://github.com/eclipse-theia/theia/discussions/8085",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:hello-world-example-generated",
+    "onCommand:start-debugging"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "hello-world-example-generated",
+        "title": "Hello World"
+      },
+      {
+        "command": "start-debugging",
+        "title": "Hello World: Start Debugging"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.34.0",
+    "vsce": "1.77.0",
+    "typescript": "^3.9.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kittaakos/output-channel-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kittaakos/output-channel-example/issues"
+  },
+  "homepage": "https://github.com/kittaakos/output-channel-example#readme"
+}
