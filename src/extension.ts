@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/theia-hello-world-plugin/node-test/index.js",
+            "program": "${workspaceFolder}/index.js",
         });
         testChannel.appendLine('running...');
         testChannel.appendLine('running...');
